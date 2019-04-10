@@ -2,7 +2,7 @@ board = [" ", " ", " ", " ", " ", " "]
 
 # code your #valid_move? method here
 def valid_move?(board, index)
-  if position_taken?(board, index) != true && index.between?(0, 9)
+  if position_taken?(board, index) != true && index.between?(0, 8)  #compensates for the index being converted from user input of 1-9 to 0-8 by input_to_index method
     return true
   else false
   end
